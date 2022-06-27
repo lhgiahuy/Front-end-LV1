@@ -1,0 +1,228 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+                            /* 1. DROPDOWN */
+
+.drop {
+background-color: #6C4A4A;
+color: white;
+padding: 20px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+min-width: 180px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+#dropdown-contentA {
+  background-color: #FFEDDB;
+  border-radius: 5px;
+}
+
+#dropdown-contentA a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+border-radius: 5px;
+}
+
+#dropdown-contentA a:hover {background-color: #DDBEBE}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .drop {
+background-color: #C89595;
+}
+
+                          /* 2. NAVBAR */
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E3C9;
+}
+.nav-list {
+  padding-left: 0;
+  margin: auto 16px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item {
+  color: #5F7161;
+  padding: 14px 16px;
+  display:inline-block;
+  cursor: pointer;
+  align-content:center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item:hover{
+  background-color: #5F7161;
+  color: #EFEAD8;
+}
+
+#logo {
+  display:inline-flex;
+align-items: center;
+margin:auto;
+}
+
+#dropdown-contentB {
+  background-color: #B4CFB0;
+  position:absolute;
+  /* max-width: 180px; */
+}
+#dropdown-contentB a {
+color: #1A4D2E;
+padding: 12px 14px;
+text-decoration: none;
+display:grid;
+}
+#dropdown-contentB a:hover {background-color: #FAFDD6}
+
+input[type=text] {
+  width: 60%;
+  /* float:inline-end; */
+  box-sizing:content-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 7px 20px 5px 20px;
+  align-content: center;
+}
+.right {
+display:flex;
+align-items: center;
+align-content: center;
+}
+.right form{
+  margin: auto;
+}
+
+.button {
+  color: #5F7161;
+  padding: 10px 16px;
+  display:inline;
+  cursor: pointer;
+  float:left;
+  align-content:center;
+  text-decoration: none;
+  align-items: center;
+  justify-content:left;
+  border-radius: 5px;
+  border:0;
+  font-size:20.7px;
+}
+.button:hover {
+  background-color: #5F7161;
+  color: #EFEAD8;
+}
+
+                              /* 4. CARD */
+
+.card-around {
+  padding: 10px;
+  height:auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #FFE6E6;
+}
+.card {
+  width: 420px;
+  overflow:hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.card-image img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.profile-image img {
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  margin-top: -75px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-content h3 {
+  font-size: 30px;
+  text-align:center;
+  margin: 0;
+}
+.card-content h5 {
+  font-size: 15px;
+  color:#5F7161;
+  text-align: center;
+  margin: 0;
+}
+.card-content h4 {
+  display:flex;
+  justify-content:space-evenly;
+  text-align: center;
+  align-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.number {
+  color:#B25068;
+  font-size: 25px;
+}
+.card-content p {
+  padding: 10px;
+}
+
+.card-button {
+  background-color: #F2789F;
+  color: #570530;
+  border: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  align-content:center;
+  text-decoration: none;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size:20.7px;
+}
+.card-button:hover {
+  color: #fff;
+  background-color:#B25068 ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
