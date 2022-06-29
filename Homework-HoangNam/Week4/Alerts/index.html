@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <style>
+        body {
+            border: ridge 2px;
+            padding: 1.5rem;
+        }
+
+        .alert {
+            background-color: rgb(207, 226, 255);
+            padding: 1rem;
+            border: solid rgb(182, 212, 254);
+            border-radius: 5px;
+            color: rgb(8, 66, 152);
+            display: block;
+            margin: 5px 5px 20px;
+        }
+
+        .success-alert {
+            background-color: rgb(209, 231, 221);
+            padding: 1rem;
+            border: solid rgb(186, 219, 204);
+            border-radius: 5px;
+            color: rgb(15, 81, 50);
+            display: block;
+            margin: 20px 5px;
+        }
+
+        .warning-alert {
+            background-color: rgb(255, 243, 205);
+            padding: 1rem;
+            border: solid rgb(255, 236, 181);
+            border-radius: 5px;
+            color: rgb(102, 77, 3);
+            display: block;
+            margin: 20px 5px;
+        }
+
+        .danger-alert {
+            background-color: rgb(248, 215, 218);
+            padding: 1rem;
+            border: solid rgb(245, 194, 199);
+            border-radius: 5px;
+            color: rgb(132, 32, 41);
+            display: block;
+            margin: 20px 5px 5px;
+        }
+
+        .icon {
+            vertical-align: -10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ion-item>
+            <span class="alert">
+                <ion-icon class="icon" name="information-circle-sharp"></ion-icon>
+                An example alert with an icon
+            </span>
+        </ion-item>
+    </div>
+
+    <div>
+        <ion-item>
+            <span class="success-alert">
+                <ion-icon class="icon" name="checkmark-circle-sharp"></ion-icon>
+                An example success alert with an icon
+            </span>
+        </ion-item>
+    </div>
+
+    <div>
+        <ion-item>
+            <span class="warning-alert">
+                <ion-icon class="icon" name="warning-sharp"></ion-icon>
+                An example warning alert with an icon
+            </span>
+        </ion-item>
+    </div>
+
+    <div>
+        <ion-item>
+            <span class="danger-alert">
+                <ion-icon class="icon" name="warning-sharp"></ion-icon>
+                An example danger alert with an icon
+            </span>
+        </ion-item>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(20, 20, 150, 100);
+</script>
+

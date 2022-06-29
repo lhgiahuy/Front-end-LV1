@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with icon and label</title>
+    <style>
+        div {
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 30px;
+            margin: 0px 20px 0px 0px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-size: 31px;
+        }
+
+        ion-icon:active {
+            font-size: large;
+        }
+
+        .trash-sharp {
+            color: rgb(100, 100, 100);
+        }
+        
+        .trash-sharp-opacity {
+            color: gray;
+            cursor: not-allowed;
+            opacity: 0.5;
+            font-size: 30px;
+        }
+
+        .trash-sharp-opacity:active {
+            background-color: white;
+            color: gray;
+            opacity: 0.5;
+            font-size: 30px;
+        }
+
+        .alarm-outline {
+            color: rgb(175, 48, 175);
+        }
+
+        .cart-outline{
+            color:rgb(60, 60, 228);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>
+            <ion-icon class="trash-sharp" name="trash-sharp"></ion-icon>
+        </button>
+
+        <button>
+            <ion-icon class="trash-sharp-opacity" name="trash-sharp"></ion-icon>
+        </button>
+        
+        <button>
+            <ion-icon class="alarm-outline" name="alarm-outline"></ion-icon>
+        </button>
+
+        <button>
+            <ion-icon class="cart-outline" name="cart-outline"></ion-icon>
+        </button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

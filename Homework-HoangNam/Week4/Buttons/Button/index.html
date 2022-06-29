@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        div {
+            border: 1px solid rgba(0, 0, 0, .125);
+            padding: 25px;
+            display: inline-flex;
+        }
+        .button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin: 0px 10px 0px 0px;  
+            cursor: pointer; 
+        }
+        .button:hover {
+            opacity: 0.5;
+        }
+        .button:active {
+            background-color: red;
+        }
+        .primary {
+            background-color: rgb(13, 110, 253);
+            color: white; 
+        }
+        .secondary {
+            background-color: rgb(108, 117, 125);
+            color: white; 
+        }
+        .success {
+            background-color: rgb(25, 135, 84);
+            color: white; 
+        }
+        .danger {
+            background-color: rgb(220, 53, 69);
+            color: white; 
+        }
+        .warning {
+            background-color: rgb(255, 193, 7);
+        }
+        .info {
+            background-color: rgb(13, 202, 240);
+        }
+        .light {
+            background-color: rgb(245, 245, 245);
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+        .link {
+            background-color: white;
+        }
+        a:visited{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="button primary">Primary</button>
+        <button class="button secondary">Secondary</button>
+        <button class="button success">Success</button>
+        <button class="button danger">Danger</button>
+        <button class="button warning">Warning</button>
+        <button class="button info">Info</button>
+        <button class="button light">Light</button>
+        <button class="button dark">Dark</button>
+        <button class="button link"><a href="http://www.facebook.com/namdh03" target="_blank">Link</a></button>
+    </div>
+</body>
+</html>

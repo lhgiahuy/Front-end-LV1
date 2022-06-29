@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unordered list</title>
+    <style>
+        li {
+            list-style-type: none;
+            padding: 16px;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: 5px;
+        }
+        .current-button:hover {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            cursor: pointer;
+        }
+        .disable-button {
+            color: #6c757d;
+            background-color: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: not-allowed;
+        }
+        .current-button:active {
+            background-color: white;
+            color: blue;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="current-button">The current button</li>
+            <li class="current-button">A second item</li>
+            <li class="current-button">A third button item</li>
+            <li class="current-button">A fourth button item</li>
+            <li class="disable-button">A disabled button item</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -197,7 +197,7 @@ a {
 
 .feature2 {
     grid-area: f2;
-    margin-bottom: calc(94.4px / 2);
+    /* margin-bottom: calc(94.4px / 2); */
     background-color: red;
 }
 
@@ -209,6 +209,7 @@ a {
 .bonus1 {
     grid-area: bonus1;
     background-color: rgba(255, 0, 0, 0.5);
+
 }
 
 .bonus2 {
@@ -231,6 +232,10 @@ a {
 
 #layout {
     display: grid;
+    grid-template-columns: repeat(12, calc(100% / 12));
+    grid-template-rows: repeat(6, 100px);
+    text-align: center;
+    font-size: 30px;
     grid-template-areas: 
     'fM fM fM fM fM header header header header header header header'
     'side-bar side-bar products products products products products products products products f2 f2'
@@ -238,16 +243,18 @@ a {
     'side-bar side-bar bonus1 bonus1 . . . . bonus3 bonus3 f3 f3'
     'side-bar side-bar . . bonus2 bonus2 . . . . bonus4 bonus4'
     'side-bar side-bar footer footer footer footer footer footer footer footer footer footer';
-    gap: 10px;
     color: white;
     padding: 10px;
     cursor: pointer;
 }
+#layout div{
+    margin: 5px;
+}
 
-#layout > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+#layout > .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #ex4 {
