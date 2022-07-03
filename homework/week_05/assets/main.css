@@ -396,20 +396,3 @@ a {
   align-self: center;
   text-align: justify;
 }
-
-@media (min-width: 740px) and (max-width: 1023px) {
-  .nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #header .nav li {
-    display: none;
-  }
-
-  #header .nav .menu-header-btn {
-    display: block;
-    align-self: flex-end;
-    font-size: 55px;
-  }
-}
